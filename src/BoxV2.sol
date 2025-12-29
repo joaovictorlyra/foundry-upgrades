@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 
 import {UUPSUpgradeable} from "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract BoxV2 is Initializable, UUPSUpgradeable, OwnableUpgradeable {
+contract BoxV2 is UUPSUpgradeable {
     uint256 internal number;
 
     function setNumber(uint256 _number) external {
